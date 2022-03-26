@@ -1,18 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Cart = ({ cart, emptyCart, ChooseOne }) => {
-	let randomNumber = 0;
+	const [ran, setRandom] = useState(0);
+	// let randomNumber = 0;
 	const arr = [12, 13, 14, 15, 16];
 
+	var randomNumber = 0;
+
 	const genRandom = () => {
-		// let step1 = max - min + 1;
-		// let step2 = Math.random() * step1;
-		// let result = Math.floor(step2) + min;
-		randomNumber = 2;
-
-		return randomNumber;
-
-		console.log('ami valo achi');
+		randomNumber = Math.floor(Math.random() * cart.length);
+		setRandom(randomNumber);
 	};
 
 	// let Total_price = 0;
@@ -40,8 +37,10 @@ const Cart = ({ cart, emptyCart, ChooseOne }) => {
 			<button onClick={emptyCart}>Remove all</button>
 			<br></br>
 			{/* <button onClick={ChooseOne}>Choose 1 for me</button> */}
-			<span>{arr[randomNumber]}</span>;<br></br>
-			<button onClick={genRandom()}>Choose 1 for me</button>
+			{cart ? <span>{cart[ran].name}</span> : <span>not found</span>}
+
+			<br></br>
+			<button onClick={genRandom}>Choose 1 for me</button>
 		</div>
 	);
 };

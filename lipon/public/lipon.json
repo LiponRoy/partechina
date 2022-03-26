@@ -2,7 +2,7 @@
     {
         "id":"12345",
         "category":"men's Sneaker",
-        "name":"kakku show",
+        "name":"mamun",
         "seller":"abdur",
         "price":"215",
         "stock":"100",
@@ -13,7 +13,7 @@
     },    {
         "id":"78910",
         "category":"men's Sneaker",
-        "name":"mamu show",
+        "name":"Biplob",
         "seller":"abdur",
         "price":"90",
         "stock":"100",
@@ -24,7 +24,7 @@
     },    {
         "id":"333435",
         "category":"men's Sneaker",
-        "name":"bipul show",
+        "name":"Jhonkar",
         "seller":"abdur",
         "price":"200",
         "stock":"100",
